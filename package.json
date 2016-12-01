@@ -1,0 +1,19 @@
+{
+  "name": "node-http-proxy",
+  "version": "1.0.0",
+  "description": "dev for cors",
+  "main": "proxy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "http",
+    "proxy"
+  ],
+  "author": "Jianhuan Liu",
+  "license": "MIT",
+  "devDependencies": {
+    "http-proxy": "^1.15.2"
+  }
+}
