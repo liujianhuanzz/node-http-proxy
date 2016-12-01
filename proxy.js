@@ -6,7 +6,7 @@ var path = require('path');
 var url = require('url');
 
 var proxy = httpProxy.createProxyServer({
-    target: 'http://10.16.77.216:50090',//接口地址
+    target: 'http://xx.xx.xx.xx:xxxx',//接口地址
     /*ssl: {
         key: fs.readFileSync('server_decrypt.key', 'utf8'),
         cert: fs.readFileSync('server.crt', 'utf8')
@@ -37,7 +37,7 @@ var server = http.createServer(function(req, res){
 
 
     //判断如果是接口访问，则通过proxy转发
-    if(pathName.indexOf('v1') > -1){
+    if(pathName.indexOf('v1') > -1){//需要更改
         console.log('[PROXY]' + pathName);
         proxy.web(req, res);
         return;
@@ -66,6 +66,6 @@ var server = http.createServer(function(req, res){
     });
 });
 
-server.listen(8088);
+server.listen(xxxx);
 
-console.log('server running at port: 8088');
+console.log('server running at port: xxxx');
